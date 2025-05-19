@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('assets/fonts/GTWalsheimPro-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMachina';
+  src: url('assets/fonts/neue-machina/NeueMachina/NeueMachina-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background: #000;
+  width: 100%;
+  overflow-x: hidden;
+  /* background-image: url("assets/Images/spiral-bg1.jpg"); */
+}
+
+.fluid1 {
+  background: #000;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100vh; /* or your desired height */
+  background-image: url("assets/Images/fluid1.jpg");
+  background-size: 150%; /* Gives room to move */
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+
+  animation: moveBackground 10s ease-in-out infinite alternate;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+
+.fluid2 {
+  background: #000;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("assets/Images/fluid2.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 41% 46% 26% 37% / 53% 37% 50% 26%;
+  }
+  33% {
+    border-radius: 60% 30% 40% 50% / 50% 60% 30% 40%;
+  }
+  66% {
+    border-radius: 30% 60% 40% 30% / 60% 40% 60% 30%;
+  }
+  100% {
+    border-radius: 41% 46% 26% 37% / 53% 37% 50% 26%;
+  }
+}
+
+.fancy-border {
+  animation: morph 6s infinite ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+
+.gt {
+  font-family: 'GT Walsheim Pro', sans-serif;
+}
+
+.neue {
+  font-family: 'NeueMachina';
+}
+
+/* index.css or App.css */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rainbow-underline {
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 800% 800%;
+  animation: rainbow 6s ease infinite;
+  height: 5px;
+  width: 4rem;
+  border-radius: 9999px;
+  margin: 0.5rem auto 0;
+  display: block;
+}
+
+.card {
+  border: none;
+  outline: none;
+  z-index: 0;
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000bb;
+  left: 0;
+  top: 0;
+  border-radius: var(--radius-3xl);
+}
+
+.card::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #9810FA, #6003a8 ,#ffffff, #5e00a5 , #9810FA
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing  20s linear infinite;
+  transition: opacity 1 ease-in-out;
+  border-radius: var(--radius-2xl);
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(152, 16, 250);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the line exactly */
+    z-index: 1; /* Make sure it’s behind other elements */
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100%;
+    }
+}
+
+
+@keyframes movedown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container{
+    animation: movedown 1s linear forwards;
+    opacity: 0%;
+}
+
+
+
+small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.leftc-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    right: -14px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #00000089;
+}
+
+.rightc-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    left: -14px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #00000089;
+}
+
+.imgg{
+    background-color: rgb(152, 16, 250); 
+    box-shadow: 2px;
+}
+
+@media only screen and (max-width:600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left:31px;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .imgg{
+        left: 10px;
+    }
+
+    .leftc-arrow , .rightc-arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -14px;
+    } 
+}
+
+.c{
+    background: linear-gradient(-45deg, #1ba251, #0698c8,#6bd2d3, #580fd4);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {   
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Custom underline for active nav link */
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;             /* Start at horizontal center */
+  bottom: 6px;           /* Adjust vertical position */
+  width: 30%;            /* Decreased width */
+  height: 2px;           /* Thickness of underline */
+  background-color: #7c3aed; /* Tailwind purple-600 */
+  border-radius: 2px;
+  transform: translateX(-50%); /* Center the underline */
+  transition: width 0.3s ease;
+}
+
