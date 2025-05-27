@@ -19,9 +19,9 @@ const Projects = () => {
             <div className="flex flex-col md:flex-row justify-center gap-8">
                 <div className="card cursor-pointer w-full md:w-1/4 h-[60vh] bg-[#00000050] border-2xl backdrop-blur-2xl rounded-3xl hover:scale-105 duration-300 px-8 py-5">
                     <div className="cardimg h-3/4 w-full rounded-3xl">
-                        <img src={p1} alt="" className="rounded-3xl h-full object-cover" />
+                        <img src={p1} alt="" className="rounded-3xl h-full object-cover w-full" />
                     </div>
-                    <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">VigilantEye</h1>
+                    <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">InterVU</h1>
                     <div className="links text-white flex flex-row justify-center gap-4 mt-5">
                         <a href="#"><FaGithub className="inline-block text-2xl"/></a>
                         <a href=""><RxEnter className="inline-block text-2xl"/></a>
@@ -29,9 +29,9 @@ const Projects = () => {
                 </div>
                 <div className="card cursor-pointer w-full md:w-1/4 h-[60vh] bg-[#00000050] border-2xl backdrop-blur-2xl rounded-3xl hover:scale-105 duration-300 px-8 py-5">
                     <div className="cardimg h-3/4 w-full rounded-3xl">
-                        <img src={p2} alt="" className="rounded-3xl h-full object-cover" />
+                        <img src={p2} alt="" className="rounded-3xl w-full h-full object-cover" />
                     </div>
-                    <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">OAuth-ToDo</h1>
+                    <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">SampleOne</h1>
                     <div className="links text-white flex flex-row justify-center gap-4 mt-5">
                         <a href="#"><FaGithub className="inline-block text-2xl"/></a>
                         <a href=""><RxEnter className="inline-block text-2xl"/></a>
@@ -39,9 +39,9 @@ const Projects = () => {
                 </div>
                 <div className="card cursor-pointer w-full md:w-1/4 h-[60vh] bg-[#00000050] border-2xl backdrop-blur-2xl rounded-3xl hover:scale-105 duration-300 px-8 py-5">
                     <div className="cardimg h-3/4 w-full rounded-3xl">
-                        <img src={p3} alt="" className="rounded-3xl h-full object-cover" />
+                        <img src={p3} alt="" className="rounded-3xl w-full h-full object-cover" />
                     </div>
-                    <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">Reminisce</h1>
+                    <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">SampleTwo</h1>
                     <div className="links text-white flex flex-row justify-center gap-4 mt-5">
                         <a href="#"><FaGithub className="inline-block text-2xl"/></a>
                         <a href=""><RxEnter className="inline-block text-2xl"/></a>

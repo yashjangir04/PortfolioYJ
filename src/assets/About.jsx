@@ -11,7 +11,7 @@ const About = () => {
       <div className="abtPartitions mt-20 flex flex-col md:flex-row w-[100%] gap-8 md:gap-0">
         <div className="abtLeft w-full md:w-1/2 flex flex-col justify-center items-center md:items-start">
           <img
-            src={img}
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXcxNHc5Znplc3NrM3Yzd3hhemdpcGN2OXA4Z280d2M4dHR2a2dnbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKGAJ7CLp95cNI4/giphy.gif"
             alt="gif"
             className="w-[60%] rounded-2xl"
           />

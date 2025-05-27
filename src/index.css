@@ -192,7 +192,7 @@ body {
     left: 50%;
     transform: translateX(-50%); /* Center the line exactly */
     z-index: 1; /* Make sure it’s behind other elements */
-    animation: moveline 6s linear forwards;
+    /* animation: moveline 6s linear forwards; */
 }
 
 @keyframes moveline {
@@ -231,8 +231,16 @@ body {
     animation-delay: 4s;
 }
 .container{
-    animation: movedown 1s linear forwards;
+    /* animation: movedown 1s linear forwards; */
     opacity: 0%;
+}
+  
+.applyAnim1{
+    animation: movedown 1s linear forwards;
+}
+
+.timeline.applyAnim2::after{
+    animation: moveline 6s linear forwards;
 }
 
 
