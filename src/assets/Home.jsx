@@ -10,7 +10,7 @@ const Home = () => {
         <div className="w-full gap-20 h-screen flex flex-col md:py-0 py-25 md:flex-row px-8 md:px-24 justify-between items-center md:gap-6 mt-10  backdrop-blur-2xl">  
           <div className="home-left flex flex-col justify-center border-0 border-zinc-700 w-full text-center md:text-left">
             <h1 className="text-white neue text-4xl md:text-7xl ">
-              Hey there, I'm a
+              Hey there, I'm
             </h1>
             <h1 className="text-white neue text-2xl md:text-6xl text-nowrap mt-2 md:mt-6">
               {" "}
