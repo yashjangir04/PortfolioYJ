@@ -50,7 +50,7 @@ const Education = () => {
               Indian Institute of Information Technology, Kota
             </h2>
             <small className="font-medium text-md text-zinc-600">
-              19 Aug 2024 - Present
+              2024 - Present
             </small>
             <p className="text-md text-purple-600">Current CGPA :- 9.46</p>
             <span className="rightc-arrow"></span>
@@ -69,10 +69,10 @@ const Education = () => {
               Matrix JEE Academy, Sikar
             </h2>
             <small className="font-medium text-md text-zinc-600">
-              3 April 2023 - 26 May 2024
+              2023 - 2024
             </small>
             <p className="text-md text-purple-600">
-              Cleared JEE Mains and JEE Advanced
+              Cleared JEE Advanced and JEE Mains
             </p>
             <span className="leftc-arrow"></span>
           </div>
@@ -89,10 +89,7 @@ const Education = () => {
             <h2 className="font-bold text-lg md:text-2xl text-white">
               Lakshmipat Singhania Academy, Bissau
             </h2>
-            <small className="font-medium text-md text-zinc-600">
-              Senior Secondary Education (2023)
-            </small>
-            <p className="text-md text-purple-600">Grade - 88.88%</p>
+            <p className="text-md text-purple-600">Senior Secondary Education (2023)  </p>
             <span className="rightc-arrow"></span>
           </div>
         </div>
@@ -108,10 +105,7 @@ const Education = () => {
             <h2 className="font-bold text-lg md:text-2xl text-white">
               Lakshmipat Singhania Academy, Bissau
             </h2>
-            <small className="font-medium text-md text-zinc-600">
-              Secondary Education (2021)
-            </small>
-            <p className="text-md text-purple-600">Grade - 91.6%</p>
+            <p className="text-md text-purple-600">Secondary Education (2021)</p>
             <span className="leftc-arrow"></span>
           </div>
         </div>
