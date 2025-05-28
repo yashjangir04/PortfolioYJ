@@ -46,7 +46,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="home-right border-0 border-zinc-700 flex justify-center md:pb-0 pb-24">
+          <div className="home-right border-0 border-zinc-700 flex justify-center md:pb-0 pb-30">
             <img
               src={img1}
               alt="personal-img"
