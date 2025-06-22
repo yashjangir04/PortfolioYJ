@@ -23,8 +23,8 @@ const Projects = () => {
                     </div>
                     <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">InterVU</h1>
                     <div className="links text-white flex flex-row justify-center gap-4 mt-5">
-                        <a href="#"><FaGithub className="inline-block text-2xl"/></a>
-                        <a href=""><RxEnter className="inline-block text-2xl"/></a>
+                        <a href="https://github.com/yashjangir04/InterVU" target="_blank" ><FaGithub className="inline-block text-2xl"/></a>
+                        <a href="https://intervu-app.vercel.app/login" target="_blank" ><RxEnter className="inline-block text-2xl"/></a>
                     </div>
                 </div>
                 <div className="card cursor-pointer w-full md:w-1/4 h-[60vh] bg-[#00000050] border-2xl backdrop-blur-2xl rounded-3xl hover:scale-105 duration-300 px-8 py-5">
@@ -34,7 +34,7 @@ const Projects = () => {
                     <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">SampleOne</h1>
                     <div className="links text-white flex flex-row justify-center gap-4 mt-5">
                         <a href="#"><FaGithub className="inline-block text-2xl"/></a>
-                        <a href=""><RxEnter className="inline-block text-2xl"/></a>
+                        <a href="#"><RxEnter className="inline-block text-2xl"/></a>
                     </div>
                 </div>
                 <div className="card cursor-pointer w-full md:w-1/4 h-[60vh] bg-[#00000050] border-2xl backdrop-blur-2xl rounded-3xl hover:scale-105 duration-300 px-8 py-5">
@@ -44,7 +44,7 @@ const Projects = () => {
                     <h1 className="text-center inter text-white text-2xl mt-3 neue text-nowrap">SampleTwo</h1>
                     <div className="links text-white flex flex-row justify-center gap-4 mt-5">
                         <a href="#"><FaGithub className="inline-block text-2xl"/></a>
-                        <a href=""><RxEnter className="inline-block text-2xl"/></a>
+                        <a href="#"><RxEnter className="inline-block text-2xl"/></a>
                     </div>
                 </div>
             </div>

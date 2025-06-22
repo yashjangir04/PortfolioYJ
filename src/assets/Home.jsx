@@ -7,7 +7,7 @@ const Home = () => {
     <div className="fluid1 w-full overflow-y-hidden">
       <div id="home">
         {/* <img src={img1} alt="backdrop" className='w-full fixed top-10 z-0'/> */}
-        <div className="w-full gap-20 h-screen flex flex-col md:py-0 py-25 md:flex-row px-8 md:px-24 justify-between items-center md:gap-6 mt-10  backdrop-blur-2xl">  
+        <div className="w-full gap-20 h-screen flex flex-col md:py-0 py-25 md:flex-row px-8 md:px-24 justify-between items-center md:gap-6 mt-10  backdrop-blur-2xl">
           <div className="home-left flex flex-col justify-center border-0 border-zinc-700 w-full text-center md:text-left">
             <h1 className="text-white neue text-4xl md:text-7xl ">
               Hey there, I'm
@@ -31,8 +31,8 @@ const Home = () => {
               </span>
             </h1>
             <div className="home-btns flex flex-row gap-3 mt-8 justify-center">
-              <a href="#" target="_blank">
-                <button className="bg-purple-600 text-white hover:text-white border-2 border-transparent hover:border-2 hover:border-purple-600 px-3 py-2 text-sm md:text-md rounded-3xl duration-300 hover:bg-transparent hover:scale-105 inter cursor-pointer ">
+              <a href="/resume.pdf" download>
+                <button className="bg-purple-600 text-white hover:text-white border-2 border-transparent hover:border-2 hover:border-purple-600 px-3 py-2 text-sm md:text-md rounded-3xl duration-300 hover:bg-transparent hover:scale-105 inter cursor-pointer">
                   Download CV
                 </button>
               </a>

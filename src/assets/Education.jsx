@@ -52,7 +52,7 @@ const Education = () => {
             <small className="font-medium text-md text-zinc-600">
               2024 - Present
             </small>
-            <p className="text-md text-purple-600">Current CGPA :- 9.46</p>
+            <p className="text-md text-purple-600">Current CGPA :- 9.67</p>
             <span className="rightc-arrow"></span>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Education = () => {
               2023 - 2024
             </small>
             <p className="text-md text-purple-600">
-              Cleared JEE Advanced and JEE Mains
+              Qualified JEE Advanced and JEE Mains
             </p>
             <span className="leftc-arrow"></span>
           </div>
