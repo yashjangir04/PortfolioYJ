@@ -50,7 +50,7 @@ const Home = () => {
             <img
               src={img1}
               alt="personal-img"
-              className="fancy-border md:scale-100 w-[60%] md:w-[50vw]"
+              className="fancy-border md:scale-100 w-[60vw] md:w-[50vw]"
             />
           </div>
         </div>
