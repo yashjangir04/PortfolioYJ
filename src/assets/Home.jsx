@@ -31,7 +31,7 @@ const Home = () => {
               </span>
             </h1>
             <div className="home-btns flex flex-row gap-3 mt-8 justify-center">
-              <a href="/resume.pdf" download>
+              <a href="/Yash_Jangir__Resume.pdf" download>
                 <button className="bg-purple-600 text-white hover:text-white border-2 border-transparent hover:border-2 hover:border-purple-600 px-3 py-2 text-sm md:text-md rounded-3xl duration-300 hover:bg-transparent hover:scale-105 inter cursor-pointer">
                   Download CV
                 </button>
