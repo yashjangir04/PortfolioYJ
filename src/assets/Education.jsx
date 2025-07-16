@@ -68,7 +68,7 @@ const Education = () => {
             <h2 className="font-bold text-lg md:text-2xl text-white">
               Matrix JEE Academy, Sikar
             </h2>
-            <small className="font-medium text-md text-zinc-600">
+            <small className="font-medium text-md text-purple-600">
               2023 - 2024
             </small>
             <span className="leftc-arrow"></span>
