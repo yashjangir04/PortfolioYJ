@@ -71,9 +71,6 @@ const Education = () => {
             <small className="font-medium text-md text-zinc-600">
               2023 - 2024
             </small>
-            <p className="text-md text-purple-600">
-              Qualified JEE Advanced and JEE Mains
-            </p>
             <span className="leftc-arrow"></span>
           </div>
         </div>
