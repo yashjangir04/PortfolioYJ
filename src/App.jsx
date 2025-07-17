@@ -6,6 +6,7 @@ import Skills from './assets/Skills'
 import Projects from './assets/Projects'
 import Education from './assets/Education'
 import Footer from './assets/Footer'
+import Cursor from './assets/Cursor' 
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       < Projects ></ Projects >
       < Education ></ Education >
       < Footer ></ Footer >
+      < Cursor />
     </div>
   )
 }
